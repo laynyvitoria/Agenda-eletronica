@@ -107,6 +107,7 @@ void exibirContatos(FILE *arquivo, int total_contatos) {
 }
 
 // Função principal
+int main() {
     FILE *arquivo;
     int opcao, total_contatos = 0;
     const char nome_arquivo[] = "dados.dat";
@@ -148,7 +149,7 @@ void exibirContatos(FILE *arquivo, int total_contatos) {
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (opcao !=3);
+    } while (opcao != 3);
 
     // Fecha o arquivo ao final da execução do programa
     fclose(arquivo);
