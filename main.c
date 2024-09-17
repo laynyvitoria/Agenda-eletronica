@@ -90,9 +90,11 @@ void cadastrarContato(FILE *arquivo, int *total_contatos) {
 // Função para exibir todos os contatos armazenados
 void exibirContatos(FILE *arquivo, int total_contatos) {
     Contato contato;
+    int i;
+
     fseek(arquivo, 0, SEEK_SET); // Move o ponteiro para o início do arquivo
     
-    for (int i = 0; i < total_contatos; i++) {
+    for (i = 0; i < total_contatos; i++) {
         fread(&contato, sizeof(Contato), 1, arquivo);
         printf("\n--- Contato %d ---\n", i + 1);
         printf("Nome: %s\n", contato.nome);
