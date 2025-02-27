@@ -29,21 +29,3 @@ Este projeto é voltado para a conclusão da disciplina de **Programação Compu
 
 - **Opções de Atualização:** Adicione novos contatos ou visualize os já existentes. ✍️
 
-## 📊 Estrutura de Dados
-
-A estrutura de dados usada no programa é:
-
-```c
-typedef struct {
-    char nome[51];
-    char telefoneFixo[15];
-    char telefoneCelular1[15];
-    char telefoneCelular2[15];
-    char email[51];
-    char rua[51];
-    int numero;
-    char complemento[51];
-    char bairro[51];
-    char cidadeEstado[51];
-    char estadoCivil[10];
-} Contato;
